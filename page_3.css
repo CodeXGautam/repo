@@ -1,0 +1,498 @@
+/* General styling for the heading */
+.tools-heading {
+    overflow: hidden;
+    margin-top: 10px;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Container for tool images */
+.tool-image-container {
+    position: relative;
+    max-width: 100%;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.AI{
+    color: #c51e3a;
+}
+
+/* Specific styling for each tool image */
+.tool-image-1 {
+    position: absolute;
+    top: 90px; /* Adjust this value as needed */
+    width: 550px; /* Adjust this value as needed */
+    height: 300px; /* Maintain the aspect ratio */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tool-image-2 {
+    position: absolute;
+    top: 150px; /* Adjust this value as needed */
+    width: 350px; /* Adjust this value as needed */
+    height: 350px; /* Maintain the aspect ratio */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 500px) {
+  .tool-image-1{
+    width: 400px;
+  }
+}
+
+.tool-image-3 {
+    position: absolute;
+    top: 200px;
+    /* left: 20px; */
+    left: 5%;
+    width: 210px; /* Adjust this value as needed */
+    height: 50px; /* Maintain the aspect ratio */
+    border-radius: 30px;
+    background-color: white;
+    background-image: url('/Design/chatgpt.png'); /* Replace with the path to your image */
+    background-size: 200px 200px; /* Adjust this value as needed */
+    background-repeat: no-repeat; /* Ensure the background does not repeat */
+    background-position: center; 
+}
+
+.tool-image-4 {
+    position: absolute;
+    top: 300px; /* Adjust this value as needed */
+    /* left: 120px; */
+    left: 12%;
+    width: 210px; /* Adjust this value as needed */
+    height: 50px; /* Maintain the aspect ratio */
+    border-radius: 30px;
+    background-color: white;
+    background-image: url('/Design/GoogleAds.png'); /* Replace with the path to your image */
+    background-size: 200px 200px; /* Adjust this value as needed */
+    background-repeat: no-repeat; /* Ensure the background does not repeat */
+    background-position: center; 
+}
+
+.tool-image-5 {
+    position: absolute;
+    top: 110px; /* Adjust this value as needed */
+    /* left: 120px; */
+    left: 12%;
+    width: 210px; /* Adjust this value as needed */
+    height: 50px; /* Maintain the aspect ratio */
+    border-radius: 30px;
+    background-color: white;
+    background-image: url('/Design/metaads.png'); /* Replace with the path to your image */
+    background-size: 150px 150px; /* Adjust this value as needed */
+    background-repeat: no-repeat; /* Ensure the background does not repeat */
+    background-position: center; 
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+}
+
+.tool-image-6 {
+    position: absolute;
+    top: 20px; /* Adjust this value as needed */
+    /* left: 230px; */
+    left: 20%;
+    width: 210px; /* Adjust this value as needed */
+    height: 50px; /* Maintain the aspect ratio */
+    border-radius: 30px;
+    background-color: white;
+    background-image: url('/Design/samrush.png'); /* Replace with the path to your image */
+    background-size: 200px 200px; /* Adjust this value as needed */
+    background-repeat: no-repeat; /* Ensure the background does not repeat */
+    background-position: center; 
+}
+
+.tool-image-7 {
+    position: absolute;
+    top: -30px; 
+    width: 210px; /* Adjust this value as needed */
+    height: 50px; /* Maintain the aspect ratio */
+    border-radius: 30px;
+    background-color: white;
+    background-image: url('/Design/googleAnalytics.png'); /* Replace with the path to your image */
+    background-size: 100px 50px; /* Adjust this value as needed */
+    background-repeat: no-repeat; /* Ensure the background does not repeat */
+    background-position: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tool-image-8 {
+    position: absolute;
+    top: 20px; 
+    /* left: 840px; */
+    right: 20%;
+    width: 210px; /* Adjust this value as needed */
+    height: 50px; /* Maintain the aspect ratio */
+    border-radius: 30px;
+    background-color: white;
+    background-image: url('/Design/PoweBi.png'); /* Replace with the path to your image */
+    background-size: 150px 150px; /* Adjust this value as needed */
+    background-repeat: no-repeat; /* Ensure the background does not repeat */
+    background-position: center; 
+}
+
+.tool-image-9 {
+    position: absolute;
+    top: 110px; /* Adjust this value as needed */
+    /* left: 940px; */
+    right: 12%;
+    width: 210px; /* Adjust this value as needed */
+    height: 50px; /* Maintain the aspect ratio */
+    border-radius: 30px;
+    background-color: white;
+    background-image: url('/Design/Photoshop.png'); /* Replace with the path to your image */
+    background-size: 200px 200px; /* Adjust this value as needed */
+    background-repeat: no-repeat; /* Ensure the background does not repeat */
+    background-position: center; 
+}
+
+.tool-image-10 {
+    position: absolute;
+    top: 200px; /* Adjust this value as needed */
+    /* left: 1030px; */
+    right: 5%;
+    width: 210px; /* Adjust this value as needed */
+    height: 50px; /* Maintain the aspect ratio */
+    border-radius: 30px;
+    background-color: white;
+    background-image: url('/Design/gemini.png'); /* Replace with the path to your image */
+    background-size: 170px 100px; /* Adjust this value as needed */
+    background-repeat: no-repeat; /* Ensure the background does not repeat */
+    background-position: center; 
+}
+
+.tool-image-11 {
+    position: absolute;
+    top: 300px; /* Adjust this value as needed */
+    /* left: 940px; */
+    right: 12%;
+    width: 210px; /* Adjust this value as needed */
+    height: 50px; /* Maintain the aspect ratio */
+    border-radius: 30px;
+    background-color: white;
+    background-image: url('/Design/ubersuggest.png'); /* Replace with the path to your image */
+    background-size: 150px 150px; /* Adjust this value as needed */
+    background-repeat: no-repeat; /* Ensure the background does not repeat */
+    background-position: center; 
+}
+
+.tool-image-12 {
+    position: absolute;
+    top: 400px; /* Adjust this value as needed */
+    /* left: 840px; */
+    right: 20%;
+    width: 210px; /* Adjust this value as needed */
+    height: 50px; /* Maintain the aspect ratio */
+    border-radius: 30px;
+    background-color: white;
+    background-image: url('/Design/HubSpot.png'); /* Replace with the path to your image */
+    background-size: 150px 70px; /* Adjust this value as needed */
+    background-repeat: no-repeat; /* Ensure the background does not repeat */
+    background-position: center; 
+}
+
+.tool-image-13 {
+    position: absolute;
+    top: 400px; /* Adjust this value as needed */
+    /* left: 230px; */
+    left: 20%;
+    width: 210px; /* Adjust this value as needed */
+    height: 50px; /* Maintain the aspect ratio */
+    border-radius: 30px;
+    background-color: white;
+    background-image: url('/Design/ahref.png'); /* Replace with the path to your image */
+    background-size: 170px 50px; /* Adjust this value as needed */
+    background-repeat: no-repeat; /* Ensure the background does not repeat */
+    background-position: center; 
+}
+
+
+.applications {
+    margin-top: 500px;
+    display: flex;
+    gap: 20px; /* Adjust this value to change the space between items */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    margin-bottom: 40px;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden; /* Ensure overflow is hidden to prevent scaling issues */
+}
+
+.applications > div {
+    width: 55px; /* Set a fixed width */
+    height: 55px; /* Set a fixed height */
+    border-radius: 20%; /* Make the divs circular */
+    background-size: contain; /* Scale images to fit within the container */
+    background-repeat: no-repeat; /* Ensure the background does not repeat */
+    background-position: center; /* Center the image within the container */
+    transition: transform 0.7s ease; /* Smooth transition for the hover effect */
+    transform-origin: center center; /* Ensure scaling happens from the center */
+}
+
+.applications > .google {
+    width: 45px; /* Set width */
+    height: 45px; /* Set height */
+    background-image: url('/Design/google.png'); /* Replace with the path to your image */
+}
+
+.applications > .whatsapp {
+    width: 45px; /* Set width */
+    height: 45px; /* Set height */
+    background-image: url('/Design/whatsapp.png'); /* Replace with the path to your image */
+}
+
+.applications > .twitter {
+    width: 60px; /* Set width */
+    height: 60px; /* Set height */
+    background-image: url('/Design/twitter.png'); /* Replace with the path to your image */
+}
+
+.applications > .meta {
+    width: 55px; /* Set width */
+    height: 55px; /* Set height */
+    background-image: url('/Design/meta.png'); /* Replace with the path to your image */
+}
+
+.applications > .linkedin {
+    width: 35px; /* Set width */
+    height: 35px; /* Set height */
+    background-image: url('/Design/linkedin.png'); /* Replace with the path to your image */
+}
+
+.applications > .instagram {
+    width: 45px; /* Set width */
+    height: 45px; /* Set height */
+    background-image: url('/Design/instagram.png'); /* Replace with the path to your image */
+}
+
+.applications > div:hover {
+    transform: scale(1.2); /* Increase size by 20% on hover */
+}
+
+/* benifits */
+.benefits {
+    background-color: white;
+    border-radius: 70px;
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+  }
+  
+  .benefits-heading {
+    font-size: 3em; /* Adjusts the font size */
+    margin-bottom: 10px; /* Adds some space below the heading */
+    font-weight: bolder;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .benefits-description {
+    color: black;
+    font-size: 1.4em;
+    max-width: 800px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+
+  .benefits-box{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 10px;
+  }
+
+  /* on time */
+  .ontime-player-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    /* margin-top: 40px; */
+    /* margin-left: 150px; */
+    width: 400px;
+    height: 300px;
+  }
+    
+  .ontime-player-text {
+    /* margin-left: -40px; */
+    font-family: 'Poppins', sans-serif;
+    margin-top: 0px;
+    font-size: 1.5em;
+    color: #000000;
+    font-weight: 900;
+  }
+  
+  .ontime-player-discription {
+    max-width: 400px;
+    /* margin-left: -100px; */
+    font-family: 'Poppins', sans-serif;
+    /* margin-top: -10px; */
+    font-size: 1.2em;
+    color: #000000;
+  }
+  
+
+  /* unlimited */
+  .unlimited-player-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    /* margin-top: -220px; Match the top margin of ontime-player-group to align vertically */
+    width: 350px;
+    height: 300px;
+  }
+  
+  .unlimited-player-text {
+    font-family: 'Poppins', sans-serif;
+    /* margin-top: -27px; */
+    font-size: 1.5em;
+    color: #000000;
+    font-weight: 900;
+  }
+  
+  .unlimited-player-discription {
+    max-width: 400px;
+    font-family: 'Poppins', sans-serif;
+    /* margin-top: -10px; */
+    font-size: 1.2em;
+    color: #000000;
+  }
+
+  /* quality */
+
+  .quality-player-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    /* margin-top: -250px; Match the top margin of ontime-player-group to align vertically */
+    /* margin-right: 150px; */
+    width: 350px;
+    height: 300px;
+  }
+  
+  .quality-player-text {
+    /* margin-right: -25px; */
+    font-family: 'Poppins', sans-serif;
+    /* margin-top: -27px; */
+    font-size: 1.5em;
+    color: #000000;
+    font-weight: 900;
+  }
+  
+  .quality-player-discription {
+    /* max-width: 400px; */
+    /* margin-right: -130px; */
+    font-family: 'Poppins', sans-serif;
+    /* margin-top: -10px; */
+    font-size: 1.2em;
+    color: #000000;
+  }
+
+  /* communication */
+
+  .communication-player-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    /* margin-top: 40px; */
+    /* margin-left: 150px; */
+    width: 350px;
+    height: 300px;
+  }
+    
+  .communication-player-text {
+    /* margin-left: -70px; */
+    font-family: 'Poppins', sans-serif;
+    margin-top: 0px;
+    font-size: 1.5em;
+    color: #000000;
+    font-weight: 900;
+  }
+  
+  .communication-player-discription {
+    /* max-width: 400px; */
+    /* margin-left: -135px; */
+    font-family: 'Poppins', sans-serif;
+    /* margin-top: -10px; */
+    font-size: 1.2em;
+    color: #000000;
+  }
+  
+  /* cost */
+
+  .cost-player-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    /* margin-top: -250px; Match the top margin of ontime-player-group to align vertically */
+    width: 350px;
+    height: 300px;
+  }
+  
+  .cost-player-text {
+    font-family: 'Poppins', sans-serif;
+    /* margin-top: 5px; */
+    font-size: 1.5em;
+    color: #000000;
+    font-weight: 900;
+  }
+  
+  .cost-player-discription {
+    max-width: 400px;
+    font-family: 'Poppins', sans-serif;
+    /* margin-top: -10px; */
+    font-size: 1.2em;
+    color: #000000;
+  }
+
+  /* satisfication */
+
+  .satisfication-player-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    /* margin-top: -300px; Match the top margin of ontime-player-group to align vertically */
+    /* margin-right: 120px; */
+    width: 350px;
+    height: 300px;
+  }
+  
+  .satisfication-player-text {
+    /* margin-right: -30px; */
+    font-family: 'Poppins', sans-serif;
+    /* margin-top: -27px; */
+    font-size: 1.5em;
+    color: #000000;
+    font-weight: 900;
+  }
+  
+  .satisfication-player-discription {
+    /* max-width: 400px; */
+    /* margin-right: -100px; */
+    font-family: 'Poppins', sans-serif;
+    /* margin-top: -10px; */
+    font-size: 1.2em;
+    color: #000000;
+  }
+
+
+
+  

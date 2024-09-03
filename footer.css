@@ -1,0 +1,273 @@
+.footer {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    height: auto; /* Allows height to expand based on content */
+    min-height: 430px; /* Adjust this value as needed for your content */
+    font-family: 'Poppins', sans-serif;
+    background-color: #212428;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; Centers the logo and content */
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    /* position: relative; */
+    overflow: hidden;
+    gap: 10px;
+    z-index: 5; /* Ensure footer is on top of overlapping elements */
+}
+
+.footer-logo {
+    /* margin-top: -180px;
+    margin-left: -190px;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    margin-bottom: 20px;
+    z-index: 1;  */
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 100%; /* Full width image */
+    height: auto;
+    object-fit: cover;
+}
+
+.footer-content {
+    /* margin-top: -400px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    gap: 10px; /* Space between columns */
+    /* margin-bottom: 20px; Space between content and bottom section */
+    /* box-sizing: border-box; */
+    /* margin-left: 350px; Shift the entire footer content to the right */
+    /* position: relative; Allows absolute positioning inside */
+    z-index: 2; /* Ensure it is on top of the footer logo */
+}
+
+.column {  /* Use the same flex settings for both */
+    /* flex: 1 1 200px; Allows each column to shrink and grow equally */
+    min-width: 150px; /* Adjusted min-width for better alignment
+    /* max-width: 150px; */ 
+    flex-direction: column;
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 8px;
+}
+
+.column h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: start; /* Align heading text to the start (left) */
+    color: #fff;
+}
+.column div a{
+    font-size: 14px;
+}
+.column div a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Us section styling */
+.contact {
+    margin-top: 10px;
+    margin-left: 50px;
+    position: relative;
+    z-index: 3; /* Ensure contact section is clickable */
+}
+
+.contact h2 {
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+/* Ensure that .contact-item has spacing */
+.contact-item {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    margin-bottom: -20px !important; /* Add margin to increase gap between items */
+}
+
+/* Additional adjustments */
+.contact-item:nth-child(n+2) { /* Only apply if there's more than one item */
+    margin-top: 10px !important; /* Ensure that the gap between items is visible */
+}
+
+.contact-item img {
+    margin-right: 10px; /* Space between image and text */
+    width: 40px; /* Adjusted width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.contact-item a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.footer-pay_and_follow{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+/* Payment section styling */
+.payment {
+    font-size: 13px;
+    box-sizing: border-box;
+    /* margin-top: -40px; */
+    /* position: absolute; Allows free positioning */
+    /* right: 20px; /* Positions the payment section on the right side */
+    /* bottom: 300px; Aligns the payment section at the top */ 
+    z-index: 4; /* Ensure payment section is clickable */
+}
+
+/* Payment options styling */
+.payment-options {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex-direction: row;
+    justify-content: center; /* Center the payment options */
+}
+
+.payment h2 {
+    text-align: center; /* Center align the heading text */
+    margin-bottom: 10px; /* Add space below the heading */
+}
+
+.payment-options li {
+    margin: 0;
+}
+
+.payment-options img {
+    margin-top: -10px;
+    width: 70px;
+    height: auto;
+}
+
+/* Footer bottom styling */
+.footer-bottom {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    /* position: absolute; */
+    /* bottom: 20px; Adjust if needed to fit the footer */
+    /* right: 20px; Align to the right side of the footer */
+    width: calc(100% - 40px); /* Ensure it doesn't exceed footer width */
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* footer social media */
+
+.follow-us {
+    top: 280px;
+    align-items: center; /* Center items vertically */
+    /* position: absolute; Set position to absolute for exact placement */
+    /* bottom: 20px; Adjust the bottom position if needed */
+    /* left: 70px; Align to the left side of the page */
+    z-index: 5; /* Higher z-index to ensure visibility over other elements */
+}
+
+.follow-us h2 {
+    margin: 0; /* Remove margins around heading */
+    font-size: 20px;
+    text-align: center; /* Center align the heading */
+}
+
+.image-container {
+    display: flex; /* Use flexbox for image alignment */
+    align-items: center; /* Center images vertically */
+    gap: 10px;
+}
+
+.follow-us img {
+    width: 40px; /* Default width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Space between images */
+}
+
+.follow-us img:last-child {
+    margin-right: 0; /* Remove margin from the last image */
+}
+
+.large-img {
+    width: 50px !important; /* Increase the width of the image and use !important to override other styles */
+    height: auto !important; /* Set height to maintain aspect ratio */
+}
+
+.small-img {
+    width: 30px !important; /* Increase the width of the image and use !important to override other styles */
+    height: auto !important; /* Set height to maintain aspect ratio */
+}
+
+.equal-img {
+    width: 45px !important; /* Increase the width of the image and use !important to override other styles */
+    height: auto !important; /* Set height to maintain aspect ratio */
+}
+
+
+.scrolling-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: larger;
+    margin-bottom: 20px;
+    width: 100%; /* Full width */
+    height: 40px;
+    overflow: hidden; /* Hide the overflowing text */
+    background-color: #ffffff; 
+    color: black; 
+    box-sizing: border-box;
+    display: flex;
+    align-items: center; /* Center the text vertically */
+    justify-content: center; /* Center the text horizontally */
+}
+
+.text-wrapper {
+    display: flex;
+    white-space: nowrap; /* Ensure the text doesn't wrap */
+    width: 200%; /* Ensure the text-wrapper width is enough to cover both spans and space */
+    animation: scroll 40s linear infinite; /* 20 seconds scroll duration, infinite loop */
+}
+
+.text {
+    display: inline-block;
+    white-space: nowrap; /* Ensure the text doesn't wrap */
+    margin-right: 200px; /* Space between the spans */
+}
+
+.notification {
+    color: red; /* Red color for the highlighted text */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(75%); /* Start at the initial position */
+    }
+
+    100% {
+        transform: translateX(-50%); /* Move left by half of the .text-wrapper width */
+    }
+
+}

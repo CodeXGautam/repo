@@ -1,0 +1,34 @@
+body {
+    font-family: 'poppins', sans-serif;
+    background-color: black; 
+    color: #333; /* Text color */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: #fff;
+    text-align: center;
+}
+
+.contact-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+}
+
+.contact-us .container {
+    max-width: 600px;
+}
+
+.contact-us h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.contact-us p {
+    font-family: 'poppins',sans-serif;
+    font-size: 2em;
+}

@@ -1,0 +1,170 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #333;
+}
+
+header {
+    font-family: 'poppins',sans-serif;
+    font-size: 25px;
+    color: #fff;
+    padding-top: 20px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.intro {
+    border-radius: 40px;
+    background-color: #212428;
+    font-size: 20px;
+    text-align: left;  /* Align text to the left */
+    color: #ffffff; /* text-gray-700 */
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 1.6; /* Define line height */
+    padding: 40px; /* Adjust the padding as needed */
+}
+
+.intro p span {
+    font-weight: bold; /* Optional: make the highlighted text bold */
+}
+
+.highlight-brands {
+    color: #ff6f61; /* Example color for "big brands" */
+}
+
+.highlight-businesses {
+    color: #00c6ff; /* Example color for "smart businesses" */
+}
+
+.highlight-creators {
+    color: #8cdf06; /* Example color for "creative creators" */
+}
+
+
+.intro h2 {
+    font-family: 'poppins', sans-serif;
+    font-size: 40px;
+    background: linear-gradient(90deg, #b0b0b0, #4d4d4d); /* Gray gradient color */
+    -webkit-background-clip: text; /* Apply gradient to text */
+    background-clip: text;
+    -webkit-text-fill-color: transparent; /* Make text fill color transparent */
+    opacity: 0; /* Start invisible */
+    transform: translateY(20px); /* Start below the original position */
+    animation: slideUp 2s ease-out forwards; /* Apply the slide-up animation */
+}
+
+/* Slide-up animation */
+@keyframes slideUp {
+    to {
+        opacity: 1; /* Fade in */
+        transform: translateY(0); /* Slide to original position */
+    }
+}
+
+.team {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.superheroes {
+    background: linear-gradient(90deg, #0ac2f5, #0072ff); /* New gradient with blue tones */
+    -webkit-background-clip: text; /* For Safari and older versions of Chrome */
+    background-clip: text; /* Standard property for modern browsers */
+    color: transparent;
+}
+
+.team-member {
+    display: inline-block;
+    width: 250px;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.team-member img {
+    width: 50%;
+    border-radius: 50%;
+    margin-bottom: 0px;
+}
+
+.team-member h3 {
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.team-member p {
+    margin-bottom: 20px;
+    color: #d1d1d1;
+}
+
+.social-handles a {
+    display: inline-block;
+    margin: 0px 0px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.social-handles a:hover {
+    transform: scale(1.1);
+}
+
+.social-handles {
+    display: flex;
+    justify-content: center;  /* Centers the icons horizontally */
+    align-items: center;      /* Aligns the icons vertically */
+    gap: 10px;                /* Adds space between the icons */
+}
+
+.social-handles img {
+    border-radius: 0px;
+    width: 54px;  /* Adjust the size of the icons here */
+    height: 54px; /* Make sure the aspect ratio is consistent */
+    transition: transform 0.3s ease;
+}
+
+.social-handles img[alt="LinkedIn"] {
+    width: 35px;  /* Adjust the size for LinkedIn here */
+    height: 35px; /* Ensure consistent aspect ratio */
+}
+
+.social-handles img[alt="Instagram"] {
+    width: 35px;  /* Adjust the size for LinkedIn here */
+    height: 35px; /* Ensure consistent aspect ratio */
+}
+
+.social-handles img[alt="Facebook"] {
+    width: 40px;  /* Adjust the size for LinkedIn here */
+    height: 45px; /* Ensure consistent aspect ratio */
+}
+
+.social-handles img[alt="Mail"] {
+    width: 45px;  /* Adjust the size for LinkedIn here */
+    height: 50px; /* Ensure consistent aspect ratio */
+}
+
+.social-handles img:hover {
+    transform: scale(1.1);
+}
+
+.heros h1{
+    font-size: 30px;
+}

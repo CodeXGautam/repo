@@ -1,0 +1,266 @@
+/* Testimonials Section Styles */
+.testimonial-heading {
+  font-size: 3em;
+  margin-bottom: 10px;
+  text-align: left; /* Align text to the left */
+  max-width: 700px;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  font-family: 'Poppins', sans-serif;
+  margin-left: 70px; /* Adjust margin if needed */
+}
+
+/* Text Styles */
+.trust {
+  color: #ffd400;
+}
+
+.Biggest {
+  color: #e043d5;
+}
+
+.Clint {
+  color: #9751e5;
+}
+
+/* Testimonial Cards Container */
+.testimonials-container {
+  display: flex;
+  overflow-x: scroll; /* Allows horizontal scrolling */
+  padding: 20px 50px; /* Padding to ensure space around cards */
+  gap: 20px; /* Spacing between cards */
+  scroll-snap-type: x mandatory; /* Snap to each card */
+  justify-content: flex-start; /* Align cards to the start */
+  align-items: center; /* Align cards vertically (if needed) */
+  width: 100%; /* Full width to accommodate centering */
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+}
+
+/* Hide scrollbar in WebKit browsers (Chrome, Safari) */
+.testimonials-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  font-family: 'poppins', sans-serif;
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto; /* Adjust height to auto to fit content */
+  scroll-snap-align: center; /* Center align card when scrolling */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; /* Center items vertically */
+  background: #1f1f1f;
+  border-radius: 50px;
+  margin: 0px 20px; /* Increase margin to prevent overflow */
+  padding: 30px; /* Added padding for inner spacing */
+  box-shadow: 0 9px 18px rgba(0, 0, 0, 0.12), 0 5px 7px rgba(0, 0, 0, 0.05); /* Added box-shadow for better visual */
+  /* position: relative; Make the card position relative for absolute positioning of inner elements */
+}
+
+@media only screen and (max-width: 660px) {
+  .testimonial-card{
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   width: 45%;
+   row-gap: 20px;
+  }
+}
+
+
+
+/* Shadow Effect */
+.shadow-effect {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+  justify-content: center;
+  /* align-items: flex-start; Align items to the left */
+  /* position: relative; Position relative to the card */
+  width: 25%; 
+  background: transparent; /* Transparent background to avoid overlap issues */
+}
+
+/* Testimonial Image */
+.shadow-effect img {
+  /* position: absolute;  */
+  /* Position the image absolutely */
+  /* left: 20px; */
+   /* Adjust as needed */
+  /* top: 50%;  */
+   /* Center vertically */
+  /* transform: translateY(-50%);  */
+  width: 110px;
+  height: 110px; /* Ensure height matches width for a circle */
+  border-radius: 50%;
+}
+
+/* Testimonial Name */
+.testimonial-name {
+  font-size: 25px;
+  /* position: relative; Ensure it’s positioned relative to the card */
+  /* padding: 9px 35px; */
+  border-radius: 12px;
+  text-align: left;
+  color:  yellow;
+  margin-bottom: 10px; /* Space between name and testimonial review */
+  margin-left: 10px; /* Add left margin to create space between image and text */
+}
+
+/* Testimonial Review */
+.shadow-effect p {
+  /* position: relative; Ensure it’s positioned relative to the card */
+  margin-left: 0px; /* Add left margin to create space between image and text */
+}
+
+
+
+/* Testimonial Review */
+.shadow-effect p {
+  margin: 0; /* Remove default margin for better alignment */
+}
+
+
+/* Slider Dots Wrapper */
+.testimonial-dots-wrapper {
+  display: flex;
+  justify-content: center; /* Center the dots horizontally */
+  align-items: center; /* Center dots vertically in the wrapper */
+  margin-top: 20px; /* Space between slider and dots */
+  width: 100%; /* Full width to ensure centering */
+  text-align: center; /* Center content inside wrapper */
+}
+
+/* Slider Dots */
+.testimonial-dots {
+  background-color: #1f1f1f; /* Background color of the dots container */
+  border-radius: 20px; /* Add rounded corners for a more polished look */
+  display: inline-flex; /* Use inline-flex to fit content closely */
+  justify-content: center; /* Center the dots horizontally */
+  align-items: center; /* Center the dots vertically */
+  padding: 12px; /* Padding around the dots */
+  gap: 10px; /* Spacing between dots */
+  width: fit-content; /* Width adjusts to fit content */
+}
+
+/* faq */
+
+/* Center the FAQ section */
+.faq {
+  margin: 2px auto;
+  padding: 1rem;
+  border-radius: 48px;
+  text-align: center; /* Center-align text */
+}
+
+/* Center the FAQ heading */
+.faq h3 {
+  margin-top: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-family: 'poppins', sans-serif;
+}
+
+/* Center the FAQ description */
+.faq_discription {
+  font-size: 1.3rem;
+  text-align: center;
+  font-family: 'poppins', sans-serif;
+}
+
+/* Center-align accordion buttons and set their width */
+.accordion-button {
+  background-color: #212428;
+  border: none;
+  padding: 1rem;
+  text-align: left;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100%; /* Ensure buttons take full width of their container */
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  outline: none;
+  margin: 0 auto; /* Center the button */
+}
+
+/* Center-align accordion content and set padding */
+.accordion-content {
+  max-width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  background-color: #212428;
+  padding: 0 1rem;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  width: 100%; /* Ensure content takes full width of its container */
+  text-align: left;
+}
+
+/* Style the accordion content paragraphs */
+.accordion-content p {
+  margin: 1rem 0;
+  color: #c4cfde;
+  font-family: 'poppins', sans-serif;
+}
+
+/* Active state for accordion */
+.accordion-item.active .accordion-content {
+  max-height: 500px; /* Adjust based on content size */
+  padding: 1rem;
+}
+
+/* Ensure accordion items are centered */
+.accordion-item {
+  max-width: 800px;
+  margin: 0 auto 0.5rem; /* Center items and add margin */
+}
+
+.bottom-bar {
+  background-color: #2c2c2c; /* bg-gray-700 */
+  padding: 2rem 1.75rem; /* py-8 px-7 */
+  border-radius: 1.5rem; /* rounded-2xl */
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem; /* gap-[20px] */
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 80%; /* Adjust the width as needed */
+  max-width: 1200px; /* Optionally, set a max width */
+  margin: 0 auto; /* Center the element horizontally */
+}
+
+
+.bottom-bar-title {
+  font-family: 'poppins',sans-serif;
+  font-size: 1.5rem; /* text-2xl */
+  color: #f5f5f5; /* Assuming a color close to text-gray-200 */
+}
+
+.bottom-bar-description {
+  font-family: 'poppins',sans-serif;
+  color: #e0e0e0; /* text-gray-200 */
+}
+
+.bottom-bar-button {
+  font-family: 'poppins',sans-serif;
+  padding: 0.75rem 1.75rem; /* py-3 px-7 */
+  width: fit-content;
+  border: 1px solid #d0d0d0; /* border border-solid border-gray-300 */
+  border-radius: 0.5rem; /* rounded-lg */
+  background-color: #ffffff; /* bg-white */
+  color: #4a4a4a; /* text-gray-700 */
+  transition: background-color 0.3s ease;
+}
+
+.bottom-bar-button:hover {
+  background-color: #f0f0f0; /* hover:bg-gray-100 */
+}
+
+.bottom-bar-button:active {
+  background-color: #e0e0e0; /* active:bg-gray-200 */
+}

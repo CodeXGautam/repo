@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'SuisseIntl';
+    src: url('fonts/SuisseIntl/SuisseIntl-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+  }
+
+@font-face {
+    font-family: 'Prelude';
+    src: url('fonts/prelude/prelude-regular.otf') format('opentype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #333;
+}
+
+header {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    padding-top: 0px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+
+.intro {
+    height: 410px;
+    font-family: 'Prelude', sans-serif;
+    border-radius: 40px;
+    background-color: #161616;
+    color: #C8ACD6; 
+    margin-left: 35px;
+    margin-right: 35px;
+    line-height: 0.7; /* Decreased line-height to reduce space between lines */
+    padding: 10px; /* Adjust the padding as needed */
+    padding-left: 30px;
+    font-size: 45px;
+    box-shadow: 0 8px 30px rgba(128, 0, 255, 0.8);
+    display: flex; /* Enable flexbox for alignment */
+    justify-content: space-between; /* Push text to the left and image to the right */
+
+}
+
+
+.intro img{
+    position: absolute;
+    height: 400px;
+    width: 700px;
+    margin-right: 20px; /* Add some space between the text and the image */
+    top: 28.5%;
+    right: 2%;
+    border-radius: 50px;
+}
+
+
+.intro p span {
+    font-weight: bold; /* Optional: make the highlighted text bold */
+}
+
+
+.team {
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 350px;
+    margin-bottom: 250px;
+    color: rgb(69, 64, 64);
+    font-size: xx-large;
+}
+
+
+
+
+/* Media Tag Starts from here */
+
+@media only screen and (max-width: 768px) {
+    .intro img {
+        display: none;
+    }
+}

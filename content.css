@@ -1,0 +1,258 @@
+@font-face {
+    font-family: 'SuisseIntl';
+    src: url('fonts/SuisseIntl/SuisseIntl-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Prelude';
+    src: url('fonts/prelude/prelude-regular.otf') format('opentype');
+}
+
+body, html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 0px; */
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+/* section {
+    height: 100vh;
+} */
+
+.content {
+    margin-top: 160px;
+    /* margin-left: 50px;  */
+    color: #FCFCFD;
+    /* text-align: center; */
+    width: 100%;
+    padding: 0 5px;
+}
+
+.tagline {
+    font-family: 'Prelude', sans-serif;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 5px;
+    margin-bottom: 40px;
+    margin-top: 1px;
+    margin-left: 80px;
+}
+
+.tagbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 660px) {
+    .tagline  {
+        font-size: 45px;
+    }
+
+    button {
+        margin:auto;
+    }
+
+    .tagbox{
+        align-items: center;
+    }
+}
+/* 
+.transforming-text {
+    color: #fdfdfd;
+    background-color: #a7a7a7;
+    border-radius: 30px;
+    width: 50vw;
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.highlight {
+    color: #FCFCFD; 
+}
+
+.red-text {
+    color: #f9004d;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper {
+    display: inline-block;
+    font-size: 28px;
+    color: #f9004d;
+    font-weight: bold;
+    overflow: hidden;
+    height: 50px;
+    vertical-align: bottom;
+    font-family: 'SuisseIntl', sans-serif; 
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.slider {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.slider span {
+    font-family: 'poppins',sans-serif;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 10px;
+    color: #f9004d;
+    animation: spin_words 9s linear infinite;
+}
+
+.slider span:nth-child(2) {
+    margin-right: 20px;
+}
+
+@keyframes spin_words {
+    0% { transform: translateY(0%); }
+    16.67% { transform: translateY(0%); }
+    20% { transform: translateY(-100%); }
+    36.67% { transform: translateY(-100%); }
+    40% { transform: translateY(-200%); }
+    56.67% { transform: translateY(-200%); }
+    60% { transform: translateY(-300%); }
+    76.67% { transform: translateY(-300%); }
+    80% { transform: translateY(-400%); }
+    96.67% { transform: translateY(-400%); }
+    100% { transform: translateY(-500%); }
+}  */
+
+.mission-statement {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.479);
+    max-width: 600px;
+    margin-left: 100px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    margin-top: 2%;
+}
+
+/* shedule intro */
+
+button {
+    font-size: 1.1em;
+    padding: 0.6em 1em;
+    border-radius: 0.5em;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px #000000b4;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    position: relative;
+    padding: -10em;
+    background: #fff;
+    border-radius: 0.9em;
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    max-width: 165px;
+    margin-left: 270px;
+    z-index: 1; 
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    border-radius: 0.9em;
+    background: linear-gradient(90deg, #03a9f4, #f441a5);
+    z-index: -1;
+    transition: filter 0.4s ease;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    inset: -3px;
+    border-radius: 0.9em;
+    background: linear-gradient(90deg, #03a9f4, #f441a5);
+    z-index: -2;
+}
+
+.container:hover::before {
+    filter: blur(1.2em);
+}
+
+.container:active::before {
+    filter: blur(0.2em);
+}
+
+/* odometer */
+.odometer-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 110px;
+    margin-bottom: 50px;
+    width: 100%;
+    column-gap: 150px; /* Space between odometer items */
+    flex-wrap: wrap;
+}
+
+.odometer-item {
+    text-align: center;
+    position: relative; /* For absolute positioning of pseudo-element */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the content inside odometer-item */
+}
+
+.odometer-item:not(:last-child):after {
+    content: "";
+    position: absolute;
+    right: -75px; /* Half of the gap between odometer items */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px; /* Width of the line */
+    height: 70px; /* Height of the line */
+    background-color: #ccc; /* Color of the line */
+}
+
+.odometer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Ensure this is relative for correct positioning */
+}
+
+.odometer {
+    font-size: 3em;
+    position: absolute;
+    color: #1fce4b;
+}
+
+.odometer-item p {
+    margin-top: 10px;
+    font-size: 1.3em;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.symbol {
+    font-size: 2em;
+    margin-left: 5px;
+    font-family: 'Poppins', sans-serif;
+    color: #1fce4b;
+}

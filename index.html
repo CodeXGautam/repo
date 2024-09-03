@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/nevigation.css">
+    <link rel="stylesheet" href="/CSS/content.css">
+    <link rel="stylesheet" href="/CSS/Page_2.css">
+    <link rel="stylesheet" href="/CSS/page_3.css">
+    <link rel="stylesheet" href="/CSS/page_4.css">
+    <link rel="stylesheet" href="/CSS/social.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />  <!--i-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-default.min.css"/> 
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <title>goBiggie</title>
+
+</head>
+<body>
+    
+    <div class="brand-container" id="brand-container">
+        <a href="index.html" class="brand-link">
+            <img src="/Design/gobiggie.png" alt="goBiggie" class="brand-logo">
+        </a>
+    </div>
+
+
+    <nav class="nav">
+
+        <ul>
+            <li>
+                <a href="#benefits" class="link-item active">
+                    <span class="material-symbols-rounded link-icon">verified</span>
+                    <span class="link-text">Benefits</span>
+                </a>
+            </li>
+            <li>
+                <a href="aboutus.html" class="link-item" target="_blank">
+                    <span class="material-symbols-rounded link-icon">info</span>
+                    <span class="link-text">About Us</span>
+                </a>
+            </li>
+            <li>
+                <a href="#services-heading" class="link-item">
+                    <span class="material-symbols-rounded link-icon">settings</span>
+                    <span class="link-text">Services</span>
+                </a>
+            </li>
+            <li>
+                <a href="connectus.html" class="link-item" target="_blank">
+                    <span class="material-symbols-rounded link-icon">connect_without_contact</span>
+                    <span class="link-text">Connect Us</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+
+    <section class="content" id="content">
+        <div class="tagbox">
+        <h1 class="tagline">
+            Take your Bus<span class="inverted-i">i</span>ness<br>
+            <span class="highlight">
+            around the, Gl<div class="loader-container"><div class="loader"></div></div>b<span class="inverted-e">e</span>.
+            </span>
+        </h1>
+        <p class="mission-statement">
+            Need a digital boost? We mix creativity with clever growth to transform your online presence and expand your reach.
+        </p>
+
+        <div class="container">
+            <!-- <button class="button">Schedule Intro</button> -->
+            
+                   <!-- CHANGE -->
+            <!-- Calendly link widget begin -->
+            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+            <button href="" class="button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/gobiggieofficial'});return false;">Schedule Date</button>
+
+            <!-- Calendly link widget end -->
+
+        </div>
+        </div>
+
+<!-- social media icons -->
+
+        <div class="social-media-icons">
+            <div class="card">
+
+                <a href="https://www.facebook.com/profile.php?id=61564852794317&mibextid=ZbWKwL" class="social-link social-link1">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="https://x.com/goBiggie_?t=QT7MTiRp93KNESFeT-PB2A&s=08" class="social-link social-link2">
+                    <i class="fab fa-twitter"></i>
+                </a>
+
+                <a href="https://www.instagram.com/gobiggie_?igsh=aHBvcXB0cTF0dDB5" class="social-link social-link3">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/company/gobiggie/" class="social-link social-link4">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>     
+
+                <a href="#" class="social-link social-link6">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                
+            </div>
+        </div>
+
+<!-- odometer -->
+
+        <div class="odometer-section">
+            
+            <div class="odometer-item">
+                <div class="odometer-container">
+                    <span class="odometer" id="members-odometer">0</span><span class="symbol">+</span>
+                    </div>
+                    <a href="aboutus.html" target="_blank"><p>Members</p></a>
+                </div>
+
+            <div class="odometer-item">
+                <div class="odometer-container">
+                    <span class="odometer" id="countries-odometer">0</span><span class="symbol">+</span>
+                </div>
+                <p>Countries</p>
+            </div>
+
+            <div class="odometer-item">
+                <div class="odometer-container">
+                    <span class="odometer" id="success-odometer">0</span><span class="symbol">%</span>
+                </div>
+                <p>Success Rate</p>
+            </div>
+            
+            <div class="odometer-item">
+                <div class="odometer-container">
+                    <span class="odometer" id="uptime-odometer">0</span><span class="symbol">%</span>
+                </div>
+                <p>Uptime</p>
+            </div>
+        </div>
+
+<!-- video -->
+
+        <div class="video-container">
+            <video id="video" controls autoplay loop muted>
+                <source src="/ads/Ads.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+<!-- services -->
+
+        <h2 class="services-heading" id="services-heading">Your Needs, Our <span class="Solution">Solution</span></h2>
+
+        <p class="services-description">
+            You have the power to choose how to <span class="highlight-grow">grow</span>, every brand is <span class="highlight-unique">unique</span>, and so are our <span class="highlight-services">services</span>. Find out how we tailor our approach to fit your <span class="highlight-goals">specific goals</span>.
+        </p>
+
+
+        <div class="services">
+            <div class="service-card">
+                <div class="service-card-image">
+                    <img src="/Design/design 1.png" alt="Design 1" class="service-image-1">
+                    <img src="/Design/design 1.png" alt="Design 2" class="service-image-2">
+                    <img src="/Design/design 1.png" alt="Design 3" class="service-image-3">
+                    <img src="/Design/design 1.png" alt="Design 4" class="service-image-4">
+                </div>
+                <div class="service-card-content">
+                    <h3 class="service-title">Search Engine Optimization</h3>
+                    <form class="search">
+                        <div class="search__wrapper">
+                            <input type="text" name="" placeholder="Search for..." class="search__field" disabled></input>
+                            <h1 type="submit" class="fa fa-search search__icon"></h1>
+                        </div>
+                    </form>
+                    <p class="service-description-seo">Feeling lost in the digital crowd? We craft bespoke strategies to elevate your website in search results, attract your perfect audience, and drive your business growth with compelling storytelling and strategic innovation.</p>
+                    <button class="service-button">More</button>
+                </div>
+            </div>
+        
+            <div class="service-card">
+                <div class="service-card-image">
+                    <img src="/Design/design 2.png" alt="Design 5" class="service-image-5">
+                    <img src="/Design/bm.png" alt="Design 6" class="service-image-6">
+                </div>
+                <div class="service-card-content">
+                    <h3 class="service-title">Business Management</h3>
+                    <p class="service-description-bm">Feeling lost in the business sea? Let us help you find the key. We'll craft a plan, just for you, to find your clients and help you grow too. With a caring touch and easy guide, we’re here to be right by your side.</p>
+                    <button class="service-button"> More</button>
+                </div>
+            </div>
+        
+            <div class="service-card">
+                <div class="service-card-image">
+                    <img src="/Design/design 3.png" alt="Design 7" class="service-image-7">
+                    <img src="/Design/smm.png" alt="Design 8" class="service-image-8">
+                </div>
+                <div class="service-card-content">
+                    <h3 class="service-title">Social Media Marketing</h3>
+                    <p class="service-description-smm">Your brand's story is a journey worth sharing. We turn your everyday moments into captivating tales, sparking genuine connections and turning followers into fans who cheer for your every step.</p>
+                    <button class="service-button"> More</button>
+                </div>
+            </div>
+        
+            <div class="service-card">
+                <div class="service-card-image">
+                    <img src="/Design/de.png" alt="Design 9" class="service-image-9">
+                    <img src="/Design/design 4.png" alt="Design 10" class="service-image-10">
+                </div>
+                <div class="service-card-content">
+                    <h3 class="service-title">Digital Endorsement</h3>
+                    <p class="service-description-de">Transform your brand's story endorsements from voices that matter. We connect you with top creators who genuinely believe in your vision, creating authentic connections with your audience.</p>
+                    <button class="service-button"> More</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+        </div>
+         
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script>
+        <script src="/Javascript/nevigation.js"></script>
+        <script src="/Javascript/Toddle.js"></script> <!--i-->
+
+        <!-- main image -->
+        
+        <div class="box yellow-rectangle"></div>
+        <div class="box purple-rectangle"></div>
+        <div class="box orange-rectangle"></div>
+        <div class="box blue-rectangle"></div>
+        <div class="box green-rectangle"></div>
+        <div class="box pink-rectangle"></div>
+
+        <!-- tools section -->
+
+        <h1 class="tools-heading">Feel the <span class="AI">strength of AI</span> in Your Work</h1>
+
+            <div class="tool-image-container">
+                <img src="/Design/tool1.png" alt="tool 1" class="tool-image-1">
+                <img src="/Design/tool2.png" alt="tool 2" class="tool-image-2">
+                <div class="tool-image-3"></div>
+                <div class="tool-image-4"></div>
+                <div class="tool-image-5"></div>
+                <div class="tool-image-6"></div>
+                <div class="tool-image-7"></div>
+                <div class="tool-image-8"></div>
+                <div class="tool-image-9"></div>
+                <div class="tool-image-10"></div>
+                <div class="tool-image-11"></div>
+                <div class="tool-image-12"></div>
+                <div class="tool-image-13"></div>
+            </div>
+
+        <div class="applications">
+            <div class="google"></div>
+            <div class="whatsapp"></div>
+            <div class="twitter"></div>
+            <div class="meta"></div>
+            <div class="linkedin"></div>
+            <div class="instagram"></div>
+        </div> 
+
+        <!-- benifits -->
+
+        <div class="benefits" id="benefits">
+            <h2 class="benefits-heading">Why choose us?</h2>
+            <p class="benefits-description">Enjoy the perks while working with us.</p>
+
+            <div class="benefits-box">
+            <div class="ontime-player-group">
+              <dotlottie-player src="https://lottie.host/809b4681-b6ec-4ef2-a4a2-e7d1c8b3b931/fPrS8rtpWK.json" background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay></dotlottie-player>
+              <p class="ontime-player-text">On time service</p>
+              <p class="ontime-player-discription">Get the services on/before time.</p>
+            </div>
+
+            <div class="unlimited-player-group">         
+                <dotlottie-player src="https://lottie.host/1536100b-529e-4801-ab53-8127cf60208e/1rxiGHU2qx.json" background="transparent" speed="0.5" style="width: 150px; height: 150px;" loop autoplay></dotlottie-player>
+                <p class="unlimited-player-text">Unlimited revisions</p>
+                <p class="unlimited-player-discription">Not satisfied? Don't worry, we'll keep refining it until it’s perfect for you.</p>
+            </div>
+
+            <div class="quality-player-group">
+                <dotlottie-player src="https://lottie.host/5bff114c-9aed-46ef-9acf-49979f832d8c/8RQNpWmaEu.json" background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay></dotlottie-player>
+                <p class="quality-player-text">Premium quality</p>
+                <p class="quality-player-discription">We bring over a best of experience and exceptional proficiency.</p>
+            </div>
+
+            <div class="communication-player-group"> 
+                <dotlottie-player src="https://lottie.host/6c7aa5c1-ade7-4b67-b1ac-6e45996af3f6/DoHKjGKk0b.json" background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay></dotlottie-player>
+                <p class="communication-player-text">Async communication</p>
+                <p class="communication-player-discription">Stay connected with frequent task updates.</p>
+            </div>
+
+            <div class="cost-player-group">
+                <dotlottie-player src="https://lottie.host/2f8183ac-cacb-4c0d-89a5-d92005cf17d5/QRBBRxdWm8.json" background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay></dotlottie-player>
+                <p class="cost-player-text">Optimized budget</p>
+                <p class="cost-player-discription">No lengthy contracts, no expensive onboarding, and no hidden costs.</p>
+            </div>
+
+            <div class="satisfication-player-group">
+                <dotlottie-player src="https://lottie.host/cdd36c18-e5cb-467c-86b9-7c978f1020db/KPOmISI535.json" background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay></dotlottie-player>
+                <p class="satisfication-player-text">Satisfication assured</p>
+                <p class="satisfication-player-discription">If you're are not satisfied, we'll issue a fixed refund, no questions asked.</p>
+            </div>
+        </div>
+          </div>
+
+ <!-- Testimonials Section -->
+<section class="testimonials">
+    <div class="testimonials-section">
+        <h2 class="testimonial-heading">
+            <span class="trust">Don't trust us?</span> <br>let's see what our <span class="Biggest">Biggest</span> <br><span class="Clint">Clint's</span> say about goBiggie.
+        </h2>
+    </div>
+
+    <!-- Testimonial Cards Container -->
+    <div class="testimonials-container">
+        <!-- Testimonial Card 1 -->
+        <div class="testimonial-card">
+            <div class="shadow-effect">
+                <img class="img-circle" src="/Images/Ashvini.jpg" alt="Pranoti Deore">
+            </div>
+            <div class="testimonial-text">
+                <div class="testimonial-name">Pranoti Deore</div>
+                <p>"goBiggie didn’t just meet my expectations—they redefined them. Their creativity, dedication, and personal touch turned our ideas into something truly special. Partnering with them felt like working with friends who genuinely care about my success." <br> <br> — Pranoti Deore</p>
+            </div>
+        </div>
+    
+        <!-- Testimonial Card 2 -->
+        <div class="testimonial-card">
+            <div class="shadow-effect">
+                <img class="img-circle" src="/Images/swapnil.jpg" alt="Swapnil Barnawal">
+            </div>
+            <div class="testimonial-text">
+                <div class="testimonial-name">Swapnil Barnawal</div>
+                <p>" Partnering with goBiggie has been a game-changer. Their fresh ideas and keen insights transformed our brand and sparked incredible growth. If you’re ready to elevate your game, they’re the team to call! "<br><br> — Swapnil Barnawal</p>
+            </div>
+        </div>
+    
+        <!-- Testimonial Card 3 -->
+        <div class="testimonial-card">
+            <div class="shadow-effect">
+                <img class="img-circle" src="/Images/Ashvini.jpg" alt="Ashvini Unawane">
+            </div>
+            <div class="testimonial-text">
+                <div class="testimonial-name">Ashvini Unawane</div>
+                <p>"goBiggie transformed our brand into something extraordinary. Their creativity and insight were just what we needed. If you want your brand to stand out, goBiggie is the way to go!" <br> <br> — Ashvini Unawane</p>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="shadow-effect">
+                <img class="img-circle" src="/Images/Ashvini.jpg" alt="Ashvini Unawane">
+            </div>
+            <div class="testimonial-text">
+                <div class="testimonial-name">Introducing More Soon...</div>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <div class="parent-container">
+        <div class="testimonial-dots-wrapper">
+          <div class="testimonial-dots">
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- faq -->
+
+<div class="faq">
+    <div class="accordion" id="accordion">
+        <h3>Frequently Asked Questions</h3>
+    <div class=faq_discription>
+        <p>Everything you need to know about the product and billing.</p>
+    </div>
+        <div class="accordion-item">
+            <button class="accordion-button">What is goBiggie ?</button>
+            <div class="accordion-content">
+                <p>goBiggie is a company that blends creativity and data to enhance brands through social media and growth hacks. We empower influencers, businesses, and creators to elevate their digital presence.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-button">How can I schedule a consultation ?</button>
+            <div class="accordion-content">
+                <p>You can schedule a consultation by clicking on the "Schedule Date" button on our website, which will open a calendar where you can select a suitable time.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-button">What services do you offer ?</button>
+            <div class="accordion-content">
+                <p>We offer a range of services including Search Engine Optimization, Business Management, and Social Media Marketing, Business Strategy to help you achieve your goals.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-button">Can I get a custom service package ?</button>
+            <div class="accordion-content">
+                <p>Yes, we can tailor our services to meet your specific needs. Contact us to discuss your requirements, and we will create a customized package for you.</p>
+            </div>
+        </div>
+
+        <div class="bottom-bar">
+            <span class="bottom-bar-title">Still have questions?</span>
+            <p class="bottom-bar-description">
+                Can’t find the answer you’re looking for? Please chat to our friendly
+                team.
+            </p>
+            <a href="connectus.html" target="_blank" class="bottom-bar-button">
+                Get in touch
+            </a>
+            
+        </div>        
+    </div>
+</div>
+
+<div class="scrolling-text">
+    <div class="text-wrapper">
+
+        <span class="text">
+            "Something More Exciting Is About To Drop  -- <span class="notification">launching Soon In 2025</span>"
+        </span>
+
+        <span class="text">
+            "Something More Exciting Is About To Drop -- <span class="notification">launching Soon In 2025</span>"
+        </span>
+
+        <span class="text">
+            "Something More Exciting Is About To Drop -- <span class="notification">launching Soon In 2025</span>"
+        </span>
+        
+        <span class="text">
+            "Something More Exciting Is About To Drop-- <span class="notification">launching Soon In 2025</span>"
+        </span>
+    </div>
+</div>
+
+<!-- footer -->
+<footer class="footer">
+    
+    <div class="footer-content">
+    <!-- Logo Section -->
+    <div class="footer-logo">
+        <a>
+            <img src="/Design/gobiggie.png" alt="Company Logo">
+        </a>
+    </div>
+    
+ 
+       
+            <div class="company column">
+                <h2>Company</h2>
+              
+                    <div><a href="aboutus.html" target="_blank">About Us</a></div>
+                    <div><a href="#">How it works</a></div>
+                    <div><a href="#">Careers</a></div>
+                    <div><a href="#">Partner with us</a></div>
+               
+            </div>
+    
+      
+            <div class="discover column">
+                <h2>Discover</h2>
+                
+                    <div><a href="#">Blog</a></div>
+                    <div><a href="#">Newsroom</a></div>
+                    <div><a href="#">Case Studies</a></div>
+                    <div><a href="Media9.html" target="_blank">Media</a></div>
+    
+            </div>
+
+            <div class="support column">
+                <h2>Support</h2>
+                
+                    <div><a href="#">T&C</a></div>
+                    <div><a href="connectus.html" target="_blank">Contact</a></div>
+                    <div><a href="connectus.html" target="_blank">Help Center</a></div>
+                    <div><a href="#">Privacy Policy</a></div>
+                    <div><a href="#">Sitemap</a></div>
+                
+            </div>
+
+        <!-- Separate Contact Us section -->
+        <div class="contact column">
+            <h2>Contact Us</h2>
+        
+                <div class="contact-item">
+                    <img src="/Design/Mail.png" alt="Mail">
+                    <a href="mailto:gobiggieofficial@gmail.com">gobiggieofficial@gmail.com</a>
+                </div>
+
+                <div class="contact-item">
+                    <img src="/Design/location.png" alt="Address">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Pune%2C+Maharashtra%2C+India" target="_blank">
+                        Pune, Maharashtra, India
+                    </a>
+                </div>
+    
+        </div>
+    </div>
+
+    <div class="footer-pay_and_follow">
+    <!-- Payment section -->
+    <div class="payment">
+        <h2>Payment Options</h2>
+        <ul class="payment-options">
+            <li><img src="/Design/visa.png" alt="Visa"></li>
+            <li><img src="/Design/mastercard.png" alt="MasterCard"></li>
+            <li><img src="/Design/paypal.png" alt="PayPal"></li>
+            <li><img src="/Design/americanexpress.png" alt="American Express"></li>
+            <li><img src="/Design/upi.png" alt="UPI"></li>
+        </ul>
+    </div>
+
+<!-- Follow Us section -->
+<div class="follow-us">
+    <h2>Follow Us</h2>
+    <div class="image-container">
+        <a href="https://www.facebook.com/profile.php?id=61564852794317&mibextid=ZbWKwL" target="_blank">
+            <img src="/Design/facebook.png" alt="meta" class="equal-img">
+        </a>
+        <a href="https://www.instagram.com/gobiggie_?igsh=aHBvcXB0cTF0dDB5"  target="_blank">
+            <img src="/Design/instagram.png" alt="instagram">
+        </a>
+        <a href="https://www.whatsapp.com" target="_blank">
+            <img src="/Design/whatsapp.png" alt="whatsapp">
+        </a>
+        <a href="https://x.com/goBiggie_?t=QT7MTiRp93KNESFeT-PB2A&s=08" target="_blank">
+            <img src="/Design/twitter.png" alt="twitter" class="large-img">
+        </a>
+        <a href="https://www.linkedin.com/company/gobiggie/" target="_blank">
+            <img src="/Design/linkedin.png" alt="linkedin" class="small-img">
+        </a>
+    </div>
+</div>
+
+</div>
+
+    <!-- Footer bottom -->
+    <div class="footer-bottom">
+        <p>goBiggie &copy; 2024. All rights reserved.</p>
+    </div>
+</footer>
+
+</section>
+</body>
+</html>
